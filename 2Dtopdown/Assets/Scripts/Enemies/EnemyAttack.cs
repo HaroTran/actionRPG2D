@@ -9,8 +9,9 @@ public class EnemyAttack : HaroMonoBehavior
 
     [SerializeField] private float attackCooldown = 1f;
 
-
     [SerializeField] private bool isAttacking = false;
+    [SerializeField] private bool isCanAttack = true;
+    public bool IsCanAttack { get { return isCanAttack; } }
     protected override void ResetAllComponents()
     {
         base.ResetAllComponents();
@@ -21,47 +22,72 @@ public class EnemyAttack : HaroMonoBehavior
         if (enemyCtrl != null && enemyCtrl.EnemyStatsSO != null)
         {
             attackRange = enemyCtrl.EnemyStatsSO.AttackRange;
+            attackCooldown = enemyCtrl.EnemyStatsSO.AttackCooldown;
         }
+
     }
 
-    private void Update()
+
+    public void StopAttacking()
     {
-         UpdateAttack();
+        StartCoroutine(CooldownAttack());
+        isAttacking = false;
     }
 
-    private void UpdateAttack()
+    public void ApplyEnemyAttack()
     {
-        if (isAttacking == true)
+        StopAttacking();        
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, attackRange, targetLayer);
+        if(hit == null)
+        {
+            Debug.Log("No target in range to attack.");
+            return;
+        }
+        if (hit == null || !hit.CompareTag("Player"))
         {
             return;
         }
+        PlayerCtrl player = hit.GetComponent<PlayerCtrl>();
+        if (player != null && player.PlayerHealth != null)
+        {
+            int damage = enemyCtrl.EnemyStatsSO.AttackDamage;
+            player.PlayerHealth.TakeDamage(damage);
+            Debug.Log($"Player took {damage} damage from enemy.");
+        }
+
+    }
+    public void EnemyAttacking()
+    {
         if (enemyCtrl.EnemyDectector.CurrentTarget == null)
         {
             isAttacking = false;
-            enemyCtrl.CurrentState = EnemyState.Idle;
-            enemyCtrl.Animator.SetBool("isAttacking", false);
-            return ;
         }
-        if (isTargetInRange())
+        if (isTargetInRange() && isCanAttack)
         {
-            Debug.Log("isTargetInRange");
+            //Debug.Log("isTargetInRange");
             isAttacking = true;
-            enemyCtrl.CurrentState = EnemyState.Attack;
-            enemyCtrl.Animator.SetBool("isAttacking", true);
-            StartCoroutine(Attacking());
         }
-        return ;
+        return;
     }
-
-    IEnumerator Attacking()
+    IEnumerator CooldownAttack()
     {
-        yield return new WaitForSeconds(0.2f);
-        enemyCtrl.Animator.SetBool("isAttacking", false);
-        yield return new WaitForSeconds(0.5f);
-        isAttacking = false;
-        Debug.Log("Attack finished");
+        Debug.Log("Start Attack cooldown");
+        isCanAttack = false;
+        yield return new WaitForSeconds(attackCooldown);
+        isCanAttack = true;
+        Debug.Log("Attack cooldown finished");
     }
-    protected bool isTargetInRange()
+/*
+            IEnumerator Attacking()
+            {
+                yield return new WaitForSeconds(0.2f);
+                enemyCtrl.Animator.SetBool("isAttacking", false);
+                yield return new WaitForSeconds(0.5f);
+                isAttacking = false;
+                Debug.Log("Attack finished");
+            }
+            */
+    public bool isTargetInRange()
     {
         if (enemyCtrl == null || enemyCtrl.EnemyDectector == null || enemyCtrl.EnemyDectector.CurrentTarget == null)
         {

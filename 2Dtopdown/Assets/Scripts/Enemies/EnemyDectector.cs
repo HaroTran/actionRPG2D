@@ -40,18 +40,16 @@ public class EnemyDectector : HaroMonoBehavior
     {
         if (collision.CompareTag("Player"))
         {
+            //Debug.Log("Player Enter Detect Range");
             currentTarget = collision.transform;
-            enemyCtrl.EnemyMovement.ChasingPlayer(collision.transform);
         }
     }
-
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("Player Exit Detect Range");
+        //Debug.Log("Player Exit Detect Range");
         if (collision.CompareTag("Player"))
         {
             currentTarget = null;
-            enemyCtrl.EnemyMovement.StopChasingPlayer();
         }
     }
 

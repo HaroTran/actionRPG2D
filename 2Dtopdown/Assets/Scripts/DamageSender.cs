@@ -1,16 +1,15 @@
 using UnityEngine;
 
-public class DamageSender : MonoBehaviour
+public class DamageSender : HaroMonoBehavior
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    protected override void ResetAllComponents()
     {
-        
+        base.ResetAllComponents();
+    }
+    protected override void Awake()
+    {
+        base.Awake();
+        ResetAllComponents();
     }
 }

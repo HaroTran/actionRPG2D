@@ -28,58 +28,27 @@ public class EnemyMovement : HaroMonoBehavior
         defaultScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
     }
 
-    private void FixedUpdate()
-    {
-        UpdateChase();
-    }
 
-    private void UpdateChase()
+    public void ChasingPlayer(Transform chaseTarget)
     {
+        this.chaseTarget = chaseTarget;
 
         if (enemyCtrl == null || enemyCtrl.EnemyStatsSO == null || rb2d == null)
         {
             return;
         }
-
-        if (chaseTarget == null)
+        Vector2 direction = (chaseTarget.position - transform.position).normalized;
+        rb2d.linearVelocity = direction * enemyCtrl.EnemyStatsSO.MoveSpeed;
+        if (!Mathf.Approximately(direction.x, 0f))
         {
-            StopChasingPlayer();
-            return;
-        }
-
-        if (enemyCtrl.CurrentState == EnemyState.Move)
-        {
-            Vector2 direction = (chaseTarget.position - transform.position).normalized;
-            rb2d.linearVelocity = direction * enemyCtrl.EnemyStatsSO.MoveSpeed;
-
-            if (!Mathf.Approximately(direction.x, 0f))
-            {
-                float facingSign = direction.x > 0f ? 1f : -1f;
-                Vector3 newScale = defaultScale;
-                newScale.x = defaultScale.x * facingSign;
-                enemyCtrl.transform.localScale = newScale;
-            }
-        }
-        else
-        {
-            StopChasingPlayer();
+            float facingSign = direction.x > 0f ? 1f : -1f;
+            Vector3 newScale = defaultScale;
+            newScale.x = defaultScale.x * facingSign;
+            enemyCtrl.transform.localScale = newScale;
         }
     }
-
-    public void ChasingPlayer(Transform playerTransform)
-    {
-        enemyCtrl.CurrentState = EnemyState.Move;
-        chaseTarget = playerTransform;
-        enemyCtrl.Animator.SetBool("isMoving", true);
-        UpdateChase();
-        Debug.Log("Chasing Player");
-    }
-
     public void StopChasingPlayer()
     {
-        //enemyCtrl.CurrentState = EnemyState.Idle;
-        chaseTarget = null;
-        enemyCtrl.Animator.SetBool("isMoving", false);
         if (rb2d != null)
         {
             rb2d.linearVelocity = Vector2.zero;

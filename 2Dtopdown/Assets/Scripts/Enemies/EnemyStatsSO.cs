@@ -6,8 +6,10 @@ public class EnemyStatsSO : ScriptableObject
     [Header("Attack Stats")]
     [SerializeField] private float attackrange = 1f;
     public float AttackRange { get { return attackrange; } }
-    [SerializeField] private float attackDamage = 10f;
-    public float AttackDamage { get { return attackDamage; } }
+    [SerializeField] private int attackDamage = 10;
+    public int AttackDamage { get { return attackDamage; } }
+    [SerializeField] private float attackCooldown = 3f;
+    public float AttackCooldown { get { return attackCooldown; } }
     [Header("Detect Stats")]
     [SerializeField] private float detectRadius = 5f;
     public float DetectRadius { get { return detectRadius; } }

@@ -2,9 +2,16 @@ using UnityEngine;
 
 public class PlayerCtrl : ObjectCtrl
 {
-    [SerializeField] protected DamageReceiver damageReceiver;
-    [SerializeField] protected HeathStatsManager heathStatsManager;
-
+    [SerializeField] private PlayerStatsSO playerStatsSO;
+    public PlayerStatsSO PlayerStatsSO { get { return playerStatsSO; } }
+    [SerializeField] private PlayerHealth playerHealth;
+    public PlayerHealth PlayerHealth { get { return playerHealth; } }
+    [SerializeField] private PlayerMovement playerMovement;
+    public PlayerMovement PlayerMovement { get { return playerMovement; } }
+    [SerializeField] private Rigidbody2D rb; 
+    public Rigidbody2D PlayerRb { get { return rb; } }
+    [SerializeField] private Animator animator;
+    public Animator PlayerAnimator { get { return animator; } }
     protected new void Reset()
     {
         ResetAllComponents();
@@ -13,10 +20,25 @@ public class PlayerCtrl : ObjectCtrl
     {
         ResetAllComponents();
     }
-    
+
     protected override void ResetAllComponents()
     {
-        damageReceiver = GetComponentInChildren<DamageReceiver>();
-        heathStatsManager = GetComponentInChildren<HeathStatsManager>();
+        base.ResetAllComponents();
+        if (playerHealth == null)
+        {
+            playerHealth = GetComponentInChildren<PlayerHealth>();
+        }
+        if (playerMovement == null)
+        {
+            playerMovement = GetComponentInChildren<PlayerMovement>();
+        }
+        if (rb == null)
+        {
+            rb = GetComponent<Rigidbody2D>();
+        }
+        if (animator == null)
+        {
+            animator = GetComponent<Animator>();
+        }
     }
 }
