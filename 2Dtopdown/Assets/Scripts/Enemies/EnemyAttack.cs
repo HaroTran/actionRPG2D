@@ -10,6 +10,7 @@ public class EnemyAttack : HaroMonoBehavior
     [SerializeField] private float attackCooldown = 1f;
 
     [SerializeField] private bool isAttacking = false;
+    public bool IsAttacking { get { return isAttacking; } }
     [SerializeField] private bool isCanAttack = true;
     public bool IsCanAttack { get { return isCanAttack; } }
     protected override void ResetAllComponents()
@@ -35,8 +36,7 @@ public class EnemyAttack : HaroMonoBehavior
     }
 
     public void ApplyEnemyAttack()
-    {
-        StopAttacking();        
+    {        
         Collider2D hit = Physics2D.OverlapCircle(transform.position, attackRange, targetLayer);
         if(hit == null)
         {
@@ -54,7 +54,6 @@ public class EnemyAttack : HaroMonoBehavior
             player.PlayerHealth.TakeDamage(damage);
             Debug.Log($"Player took {damage} damage from enemy.");
         }
-
     }
     public void EnemyAttacking()
     {
@@ -71,11 +70,11 @@ public class EnemyAttack : HaroMonoBehavior
     }
     IEnumerator CooldownAttack()
     {
-        Debug.Log("Start Attack cooldown");
+        //Debug.Log("Start Attack cooldown");
         isCanAttack = false;
         yield return new WaitForSeconds(attackCooldown);
         isCanAttack = true;
-        Debug.Log("Attack cooldown finished");
+        //Debug.Log("Attack cooldown finished");
     }
 /*
             IEnumerator Attacking()

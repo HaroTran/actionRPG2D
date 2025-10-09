@@ -7,9 +7,9 @@ public class EnemyStateMachine : HaroMonoBehavior
     [SerializeField] EnemyState _currentState;
     public EnemyState CurrentState { get { return _currentState; } private set { _currentState = value; } }
 
-    [SerializeField] protected EnemyIdleState enemyIdleState;
-    [SerializeField] protected EnemyMoveState enemyMoveState;
-    [SerializeField] protected EnemyAttackState enemyAttackState;
+    [SerializeField] public EnemyIdleState enemyIdleState{get; private set; }
+    [SerializeField] public EnemyMoveState enemyMoveState{get; private set; }
+    [SerializeField] public EnemyAttackState enemyAttackState{get; private set; }
 
     protected override void ResetAllComponents()
     {
@@ -27,17 +27,23 @@ public class EnemyStateMachine : HaroMonoBehavior
     }
     public void ChangeState(EnemyState newState)
     {
+        if(_currentState?.GetType().Name == newState?.GetType().Name)
+        {
+            return;
+        }
+        Debug.Log("From State: " + (_currentState != null ? _currentState.GetType().Name : "null"));
         if (_currentState != null)
         {
             _currentState.Exit();
         }
         _currentState = newState;
+        Debug.Log("To State: " + (_currentState != null ? _currentState.GetType().Name : "null"));
         _currentState?.Enter();
     }
     protected void Update() => _currentState?.Tick();
 }
 
-public abstract class EnemyState : MonoBehaviour
+public abstract class EnemyState
 {
     protected readonly EnemyCtrl enemyCtrl;
     protected readonly EnemyStateMachine enemyStateMachine;

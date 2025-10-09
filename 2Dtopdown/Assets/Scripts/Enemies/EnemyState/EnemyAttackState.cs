@@ -6,32 +6,36 @@ public class EnemyAttackState : EnemyState
 
     public override void Enter()
     {
-        if(enemyCtrl.EnemyAttack.IsCanAttack == false)
+        if (enemyCtrl.EnemyAttack.IsCanAttack == false)
         {
-            enemyStateMachine.ChangeState(new EnemyIdleState(enemyCtrl, enemyStateMachine));
+            enemyStateMachine.ChangeState(enemyStateMachine.enemyIdleState);
             return;
         }
         enemyCtrl.Animator.SetBool("isMoving", false);
     }
     public override void Tick()
     {
+        if (enemyCtrl.EnemyAttack.IsAttacking)
+        {
+            return;
+        }
         var target = enemyCtrl.EnemyDectector.CurrentTarget;
         if (target == null)
         {
-            enemyStateMachine.ChangeState(new EnemyIdleState(enemyCtrl, enemyStateMachine));
+            enemyStateMachine.ChangeState(enemyStateMachine.enemyIdleState);
             return;
         }
 
         if (!enemyCtrl.EnemyAttack.isTargetInRange())
         {
-            enemyStateMachine.ChangeState(new EnemyMoveState(enemyCtrl, enemyStateMachine));
+            enemyStateMachine.ChangeState(enemyStateMachine.enemyMoveState);
             return;
         }
         else
         {
-            if (enemyCtrl.EnemyAttack.IsCanAttack == false)
+            if (enemyCtrl.EnemyAttack.IsCanAttack == false )
             {
-                enemyStateMachine.ChangeState(new EnemyIdleState(enemyCtrl, enemyStateMachine));
+                enemyStateMachine.ChangeState(enemyStateMachine.enemyIdleState);
                 return;
             }
             else
@@ -44,8 +48,8 @@ public class EnemyAttackState : EnemyState
     }
     public override void Exit()
     {
+        Debug.Log("Exit Enemy Attack State");
         enemyCtrl.Animator.SetBool("isAttacking", false);
-        
     }
 
 }

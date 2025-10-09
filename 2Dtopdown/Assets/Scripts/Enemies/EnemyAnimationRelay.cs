@@ -27,6 +27,7 @@ public class EnemyAnimationRelay : HaroMonoBehavior
         if (enemyCtrl != null && enemyCtrl.EnemyAttack != null)
         {
             enemyCtrl.EnemyAttack.ApplyEnemyAttack();
+            enemyCtrl.EnemyAttack.StopAttacking();
         }
     }
 }

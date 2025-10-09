@@ -15,7 +15,7 @@ public class EnemyMoveState : EnemyState
         var target = enemyCtrl.EnemyDectector.CurrentTarget;
         if (target == null)
         {
-            enemyStateMachine.ChangeState(new EnemyIdleState(enemyCtrl, enemyStateMachine));
+            enemyStateMachine.ChangeState(enemyStateMachine.enemyIdleState);
             enemyCtrl.EnemyMovement.StopChasingPlayer();
             return;
         }
@@ -23,7 +23,7 @@ public class EnemyMoveState : EnemyState
         if (enemyCtrl.EnemyAttack.isTargetInRange())
         {
             enemyCtrl.EnemyMovement.StopChasingPlayer();
-            enemyStateMachine.ChangeState(new EnemyAttackState(enemyCtrl, enemyStateMachine));
+            enemyStateMachine.ChangeState(enemyStateMachine.enemyAttackState);
             return;
         }
         else
@@ -34,6 +34,7 @@ public class EnemyMoveState : EnemyState
     }
     public override void Exit()
     {
+        Debug.Log("Exit Enemy Move State");
         enemyCtrl.EnemyMovement.StopChasingPlayer();
         enemyCtrl.Animator.SetBool("isMoving", false);
     }

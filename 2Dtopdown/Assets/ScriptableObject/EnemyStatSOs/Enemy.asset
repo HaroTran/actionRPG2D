@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Enemy
   m_EditorClassIdentifier: Assembly-CSharp::EnemyStatsSO
   attackrange: 1
-  attackDamage: 10
+  attackDamage: 3
   attackCooldown: 3
   detectRadius: 5
   moveSpeed: 2

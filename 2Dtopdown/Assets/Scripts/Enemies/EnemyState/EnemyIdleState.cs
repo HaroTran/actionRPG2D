@@ -17,16 +17,24 @@ public class EnemyIdleState : EnemyState
         {
             return;
         }
-        
-        if(enemyCtrl.EnemyAttack.isTargetInRange())
+
+        if (enemyCtrl.EnemyAttack.isTargetInRange())
         {
-            enemyStateMachine.ChangeState(new EnemyAttackState(enemyCtrl, enemyStateMachine));
+            if(enemyCtrl.EnemyAttack.IsCanAttack == false)
+            {
+                return;
+            }
+            enemyStateMachine.ChangeState(enemyStateMachine.enemyAttackState);
             return;
         }
         else
         {
-            enemyStateMachine.ChangeState(new EnemyMoveState(enemyCtrl, enemyStateMachine));
+            enemyStateMachine.ChangeState(enemyStateMachine.enemyMoveState);
             return;
         }
+    }
+    public override void Exit()
+    {
+        Debug.Log("Exit Enemy Idle State");
     }
 }

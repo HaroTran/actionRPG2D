@@ -10,5 +10,13 @@ public class PlayerStatsSO : ScriptableObject
     [Header("Movement Stats")]
     [SerializeField] private float moveSpeed;
     public float MoveSpeed { get { return moveSpeed; } }
+
+    [Header("Attack Stats")]
+    [SerializeField] private int attackDamage;
+    public int AttackDamage { get { return attackDamage; } }
+    [SerializeField] private float attackRange;
+    public float AttackRange { get { return attackRange; } }
+    [SerializeField] private float attackCooldown;
+    public float AttackCooldown { get { return attackCooldown; } }
     
 }

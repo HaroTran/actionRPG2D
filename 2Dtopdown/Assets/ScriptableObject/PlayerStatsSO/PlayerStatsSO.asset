@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStatsSO
   maxHealth: 10
   moveSpeed: 5
+  attackDamage: 3
+  attackRange: 1
+  attackCooldown: 1
