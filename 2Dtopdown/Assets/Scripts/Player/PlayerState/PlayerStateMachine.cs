@@ -1,8 +1,18 @@
 using UnityEngine;
 
-public class PlayerStateMachine : HaroMonoBehavior
+public class PlayerStateMachine : ObjectStateMachine
 {
     [SerializeField] private PlayerCtrl playerCtrl;
+
+    public override void EnterKnockbackState()
+    {
+        // Implement logic for entering knockback state here
+    }
+
+    public override void ExitKnockbackState()
+    {
+        // Implement logic for exiting knockback state here
+    }
 
     [SerializeField] PlayerState _currentState;
     public PlayerState CurrentState { get { return _currentState; } private set { _currentState = value; } }
@@ -27,10 +37,7 @@ public class PlayerStateMachine : HaroMonoBehavior
     }
     public void ChangeState(PlayerState newState)
     {
-        if(_currentState?.GetType().Name == newState?.GetType().Name)
-        {
-            return;
-        }
+
         if (_currentState != null)
         {
             _currentState.Exit();

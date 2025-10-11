@@ -24,6 +24,7 @@ public class PlayerAnimationRelay : HaroMonoBehavior
     {
         if (playerCtrl != null && playerCtrl.PlayerAttack != null)
         {
+            playerCtrl.PlayerAttack.ApplyPlayerAttack();
             playerCtrl.PlayerAttack.StopAttacking();
         }
     }

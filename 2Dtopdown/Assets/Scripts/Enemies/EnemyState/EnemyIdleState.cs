@@ -35,6 +35,6 @@ public class EnemyIdleState : EnemyState
     }
     public override void Exit()
     {
-        Debug.Log("Exit Enemy Idle State");
+        //Debug.Log("Exit Enemy Idle State");
     }
 }

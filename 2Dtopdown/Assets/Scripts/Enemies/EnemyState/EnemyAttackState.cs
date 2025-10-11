@@ -48,7 +48,7 @@ public class EnemyAttackState : EnemyState
     }
     public override void Exit()
     {
-        Debug.Log("Exit Enemy Attack State");
+        //Debug.Log("Exit Enemy Attack State");
         enemyCtrl.Animator.SetBool("isAttacking", false);
     }
 

@@ -12,12 +12,13 @@ public class PlayerIdleState : PlayerState
         base.Enter();
         playerCtrl.PlayerAnimator.SetBool("isAttacking", false);
         playerCtrl.PlayerAnimator.SetBool("isMoving", false);
+        
     }
 
     public override void Exit()
     {
         base.Exit();
-        Debug.Log("Exit Idle State");
+        //Debug.Log("Exit Idle State");
     }
 
     public override void Tick()

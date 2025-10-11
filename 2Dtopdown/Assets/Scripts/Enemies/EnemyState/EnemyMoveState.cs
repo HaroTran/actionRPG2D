@@ -34,7 +34,7 @@ public class EnemyMoveState : EnemyState
     }
     public override void Exit()
     {
-        Debug.Log("Exit Enemy Move State");
+        //Debug.Log("Exit Enemy Move State");
         enemyCtrl.EnemyMovement.StopChasingPlayer();
         enemyCtrl.Animator.SetBool("isMoving", false);
     }

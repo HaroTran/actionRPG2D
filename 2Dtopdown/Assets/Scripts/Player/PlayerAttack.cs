@@ -31,12 +31,39 @@ public class PlayerAttack : DamageSender
     {
         if (Input.GetKeyDown(KeyCode.J) && isCanAttack)
         {
-            Debug.Log("Player attack");
+            //Debug.Log("Player attack");
             isAttacking = true;
-            playerCtrl.PlayerStateMachine.ChangeState(new PlayerAttackState(playerCtrl, playerCtrl.PlayerStateMachine));
+            playerCtrl.PlayerStateMachine.ChangeState(playerCtrl.PlayerStateMachine.playerAttackState);
         }
     }
 
+    public void ApplyPlayerAttack()
+    {
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, attackRange, targetLayer);
+        if (hits.Length == 0)
+        {
+            Debug.Log("No target in range to attack.");
+            return;
+        }
+
+        foreach (Collider2D potential in hits)
+        {
+            if (!potential.CompareTag("Enemy"))
+            {
+                //Debug.Log($"Ignored non-enemy collider: {potential.name}");
+                continue;
+            }
+
+            //Debug.Log($"Player attack hit: {potential.name}");
+            EnemyCtrl enemy = potential.GetComponent<EnemyCtrl>();
+            if (enemy != null && enemy.EnemyHealth != null)
+            {
+                int damage = playerCtrl.PlayerStatsSO.AttackDamage;
+                enemy.EnemyHealth.TakeDamage(damage, playerCtrl.transform);
+                //Debug.Log($"Enemy took {damage} damage from player.");
+            }
+        }
+    }
     public void StopAttacking()
     {
         isAttacking = false;
@@ -50,6 +77,13 @@ public class PlayerAttack : DamageSender
         isCanAttack = true;
         //Debug.Log("Attack cooldown finished");
     }
+    #if UNITY_EDITOR
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
+    }
+    #endif
 
 
 

@@ -40,7 +40,7 @@ public class EnemyAttack : HaroMonoBehavior
         Collider2D hit = Physics2D.OverlapCircle(transform.position, attackRange, targetLayer);
         if(hit == null)
         {
-            Debug.Log("No target in range to attack.");
+            //Debug.Log("No target in range to attack.");
             return;
         }
         if (hit == null || !hit.CompareTag("Player"))
@@ -52,7 +52,7 @@ public class EnemyAttack : HaroMonoBehavior
         {
             int damage = enemyCtrl.EnemyStatsSO.AttackDamage;
             player.PlayerHealth.TakeDamage(damage);
-            Debug.Log($"Player took {damage} damage from enemy.");
+            //Debug.Log($"Player took {damage} damage from enemy.");
         }
     }
     public void EnemyAttacking()

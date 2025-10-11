@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyStateMachine : HaroMonoBehavior
+public class EnemyStateMachine : ObjectStateMachine
 {
     [SerializeField] private EnemyCtrl enemyCtrl;
 
@@ -9,7 +9,8 @@ public class EnemyStateMachine : HaroMonoBehavior
 
     [SerializeField] public EnemyIdleState enemyIdleState{get; private set; }
     [SerializeField] public EnemyMoveState enemyMoveState{get; private set; }
-    [SerializeField] public EnemyAttackState enemyAttackState{get; private set; }
+    [SerializeField] public EnemyAttackState enemyAttackState { get; private set; }
+    [SerializeField] public EnemyKnockBackState enemyKnockBackState { get; private set; }
 
     protected override void ResetAllComponents()
     {
@@ -18,6 +19,7 @@ public class EnemyStateMachine : HaroMonoBehavior
         enemyIdleState = new EnemyIdleState(enemyCtrl, this);
         enemyMoveState = new EnemyMoveState(enemyCtrl, this);
         enemyAttackState = new EnemyAttackState(enemyCtrl, this);
+        enemyKnockBackState = new EnemyKnockBackState(enemyCtrl, this);
         ChangeState(enemyIdleState);
     }
     protected override void Awake()
@@ -27,20 +29,29 @@ public class EnemyStateMachine : HaroMonoBehavior
     }
     public void ChangeState(EnemyState newState)
     {
-        if(_currentState?.GetType().Name == newState?.GetType().Name)
-        {
-            return;
-        }
-        Debug.Log("From State: " + (_currentState != null ? _currentState.GetType().Name : "null"));
+
+        //Debug.Log("From State: " + (_currentState != null ? _currentState.GetType().Name : "null"));
         if (_currentState != null)
         {
             _currentState.Exit();
         }
         _currentState = newState;
-        Debug.Log("To State: " + (_currentState != null ? _currentState.GetType().Name : "null"));
+        //Debug.Log("To State: " + (_currentState != null ? _currentState.GetType().Name : "null"));
         _currentState?.Enter();
     }
     protected void Update() => _currentState?.Tick();
+
+    // Implement abstract methods from ObjectStateMachine
+    public override void EnterKnockbackState()
+    {
+        ChangeState(enemyKnockBackState);
+    }
+
+    public override void ExitKnockbackState()
+    {
+        // You can choose which state to transition to after knockback, here we use Idle as an example
+        ChangeState(enemyIdleState);
+    }
 }
 
 public abstract class EnemyState

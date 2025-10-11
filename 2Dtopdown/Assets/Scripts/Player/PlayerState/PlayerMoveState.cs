@@ -16,8 +16,9 @@ public class PlayerMoveState : PlayerState
     public override void Exit()
     {
         base.Exit();
-        Debug.Log("Exit Move State");
+        //Debug.Log("Exit Move State");
         playerCtrl.PlayerAnimator.SetBool("isMoving", false);
+        
     }
 
     public override void Tick()

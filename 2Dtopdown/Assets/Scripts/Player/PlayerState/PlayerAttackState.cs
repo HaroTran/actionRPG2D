@@ -24,20 +24,20 @@ public class PlayerAttackState : PlayerState
         }
         if (playerCtrl.PlayerMovement.IsMoving)
         {
-            Debug.Log("Change to Move State");
+            //Debug.Log("Change to Move State");
             playerStateMachine.ChangeState(playerStateMachine.playerMoveState);
             return;
         }
         else
         {
-            Debug.Log("Change to Idle State");
-            playerStateMachine.ChangeState(new PlayerIdleState(playerCtrl, playerStateMachine));
+            //Debug.Log("Change to Idle State");
+            playerStateMachine.ChangeState(playerStateMachine.playerIdleState);
         }
     }
     public override void Exit()
     {
         base.Exit();
-        Debug.Log("Exit Attack State");
+        //Debug.Log("Exit Attack State");
         playerCtrl.PlayerMovement.EnableMovement();
         playerCtrl.PlayerAnimator.SetBool("isAttacking", false);
     }

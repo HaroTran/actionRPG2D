@@ -40,8 +40,6 @@ public class PlayerMovement : HaroMonoBehavior
     private void Update()
     {
         movementInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
-        animator.SetFloat("horizontal", Mathf.Abs(movementInput.x));
-        animator.SetFloat("vertical", Mathf.Abs(movementInput.y));
         if (movementInput == Vector2.zero)
         {
             isMoving = false;
