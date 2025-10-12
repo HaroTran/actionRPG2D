@@ -3,15 +3,15 @@ using UnityEngine;
 
 public class EnemyAttack : HaroMonoBehavior
 {
-    [SerializeField] private EnemyCtrl enemyCtrl;
-    [SerializeField] private LayerMask targetLayer;
-    [SerializeField] private float attackRange = 1f;
+    [SerializeField] protected EnemyCtrl enemyCtrl;
+    [SerializeField] protected LayerMask targetLayer;
+    [SerializeField] protected float attackRange = 1f;
 
-    [SerializeField] private float attackCooldown = 1f;
+    [SerializeField] protected float attackCooldown = 1f;
 
-    [SerializeField] private bool isAttacking = false;
+    [SerializeField] protected bool isAttacking = false;
     public bool IsAttacking { get { return isAttacking; } }
-    [SerializeField] private bool isCanAttack = true;
+    [SerializeField] protected bool isCanAttack = true;
     public bool IsCanAttack { get { return isCanAttack; } }
     protected override void ResetAllComponents()
     {
@@ -31,11 +31,11 @@ public class EnemyAttack : HaroMonoBehavior
 
     public void StopAttacking()
     {
-        StartCoroutine(CooldownAttack());
         isAttacking = false;
+        StartCoroutine(CooldownAttack());
     }
 
-    public void ApplyEnemyAttack()
+    public virtual void ApplyEnemyAttack()
     {        
         Collider2D hit = Physics2D.OverlapCircle(transform.position, attackRange, targetLayer);
         if(hit == null)

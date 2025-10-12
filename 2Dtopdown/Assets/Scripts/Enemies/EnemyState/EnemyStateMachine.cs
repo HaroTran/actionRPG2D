@@ -11,6 +11,7 @@ public class EnemyStateMachine : ObjectStateMachine
     [SerializeField] public EnemyMoveState enemyMoveState{get; private set; }
     [SerializeField] public EnemyAttackState enemyAttackState { get; private set; }
     [SerializeField] public EnemyKnockBackState enemyKnockBackState { get; private set; }
+    [SerializeField] public EnemyRangeMoveState enemyRangeMoveState { get; private set; }
 
     protected override void ResetAllComponents()
     {
@@ -20,6 +21,7 @@ public class EnemyStateMachine : ObjectStateMachine
         enemyMoveState = new EnemyMoveState(enemyCtrl, this);
         enemyAttackState = new EnemyAttackState(enemyCtrl, this);
         enemyKnockBackState = new EnemyKnockBackState(enemyCtrl, this);
+        enemyRangeMoveState = new EnemyRangeMoveState(enemyCtrl, this);
         ChangeState(enemyIdleState);
     }
     protected override void Awake()
