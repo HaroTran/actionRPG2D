@@ -15,9 +15,20 @@ public class EnemyRangeAttack : EnemyAttack
     {
         Shoot(enemyCtrl.EnemyDectector.CurrentTarget);
     }
+
+    public override void EnemyAttacking()
+    {
+        //Debug.Log("EnemyAttacking");
+        base.EnemyAttacking();
+        Transform target = enemyCtrl.EnemyDectector.CurrentTarget;
+        Vector2 dir = (target.position - firePoint.position).normalized;
+        if (target == null || dir == Vector2.zero) return;
+        enemyCtrl.Animator.SetFloat("aimX", dir.x);
+        enemyCtrl.Animator.SetFloat("aimY", dir.y);
+    }
     public virtual void Shoot(Transform target)
     {
-        if (target == null || firePoint == null) return;
+        if (target == null || firePoint == null || isCanAttack==false) return;
 
         Vector2 dir = (target.position - firePoint.position).normalized;
         if (dir == Vector2.zero) return;

@@ -18,8 +18,9 @@ public class EnemyIdleState : EnemyState
             return;
         }
 
-        if (enemyCtrl.EnemyAttack.isTargetInRange())
+        if (enemyCtrl.EnemyAttack?.isTargetInRange() == true)
         {
+            enemyCtrl.EnemyMovement?.SwapFaceDirection();
             if(enemyCtrl.EnemyAttack.IsCanAttack == false)
             {
                 return;

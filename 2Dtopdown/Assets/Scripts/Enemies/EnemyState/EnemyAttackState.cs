@@ -15,7 +15,7 @@ public class EnemyAttackState : EnemyState
     }
     public override void Tick()
     {
-        if (enemyCtrl.EnemyAttack.IsAttacking)
+        if (enemyCtrl.EnemyAttack.IsAttacking==true)
         {
             return;
         }
@@ -35,6 +35,7 @@ public class EnemyAttackState : EnemyState
         {
             if (enemyCtrl.EnemyAttack.IsCanAttack == false )
             {
+                enemyCtrl.EnemyMovement.SwapFaceDirection();
                 enemyStateMachine.ChangeState(enemyStateMachine.enemyIdleState);
                 return;
             }

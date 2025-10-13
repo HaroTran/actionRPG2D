@@ -24,6 +24,11 @@ public class PlayerMoveState : PlayerState
     public override void Tick()
     {
         base.Tick();
+        if(playerCtrl.PlayerDash.IsDashing)
+        {
+            playerStateMachine.ChangeState(playerStateMachine.playerDashState);
+            return;
+        }
         if (!playerCtrl.PlayerMovement.IsMoving)
         {
             playerStateMachine.ChangeState(playerStateMachine.playerIdleState);

@@ -55,7 +55,7 @@ public class EnemyAttack : HaroMonoBehavior
             //Debug.Log($"Player took {damage} damage from enemy.");
         }
     }
-    public void EnemyAttacking()
+    public virtual void EnemyAttacking()
     {
         if (enemyCtrl.EnemyDectector.CurrentTarget == null)
         {
@@ -66,7 +66,6 @@ public class EnemyAttack : HaroMonoBehavior
             //Debug.Log("isTargetInRange");
             isAttacking = true;
         }
-        return;
     }
     IEnumerator CooldownAttack()
     {

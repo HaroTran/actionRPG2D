@@ -56,7 +56,12 @@ public class PlayerMovement : HaroMonoBehavior
 
     private void FixedUpdate()
     {
-        if (isCanMove && isMoving)
+        if (!isCanMove)
+        {
+            return;
+        }
+
+        if (isMoving)
         {
             PlayerMovementStart();
         }
@@ -75,10 +80,13 @@ public class PlayerMovement : HaroMonoBehavior
         isMoving = false;
     }
 
-    public void DisableMovement()
+    public void DisableMovement(bool stopImmediately = true)
     {
         isCanMove = false;
-        PlayerMovementStop();
+        if(stopImmediately)
+        {
+            PlayerMovementStop();
+        }
     }
     public void EnableMovement()
     {

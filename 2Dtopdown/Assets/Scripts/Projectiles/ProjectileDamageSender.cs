@@ -1,10 +1,13 @@
 using UnityEngine;
 
+[RequireComponent(typeof(CapsuleCollider2D))]
 public class ProjectileDamageSender : DamageSender
 {
     [SerializeField] protected ProjectileCtrl projectileCtrl;
 
     [SerializeField] protected CapsuleCollider2D projectileCollider;
+
+    [SerializeField] bool isDestroyByTrigger = true;
     protected override void ResetAllComponents()
     {
         base.ResetAllComponents();
@@ -30,10 +33,13 @@ public class ProjectileDamageSender : DamageSender
     {
         if (collision.CompareTag("Player"))
         {
-            if(collision!=null)
+            if (collision != null)
             {
                 collision.GetComponent<PlayerCtrl>().PlayerHealth.TakeDamage(projectileCtrl.ProjectileStatSO.Damage);
-                projectileCtrl.ProjectileDespawn.Despawn();
+                if(isDestroyByTrigger)
+                {
+                    projectileCtrl.ProjectileDespawn.Despawn();
+                }
             }
         }
     }

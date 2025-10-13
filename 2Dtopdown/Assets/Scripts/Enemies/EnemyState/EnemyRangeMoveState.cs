@@ -22,7 +22,7 @@ public class EnemyRangeMoveState : EnemyMoveState
         }
         else
         {
-            enemyCtrl.EnemyMovement.MovingAroundPlayer(target);
+            //enemyCtrl.EnemyMovement.MovingAroundPlayer(target);
             return;
         }
     }

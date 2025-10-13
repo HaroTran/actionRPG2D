@@ -8,6 +8,7 @@ public class EnemyMovement : HaroMonoBehavior
 
     private Vector3 defaultScale;
     private Transform chaseTarget;
+    protected Vector2 moveDirection;
 
     protected override void ResetAllComponents()
     {
@@ -37,11 +38,12 @@ public class EnemyMovement : HaroMonoBehavior
         {
             return;
         }
-        Vector2 direction = (chaseTarget.position - transform.position).normalized;
-        rb2d.linearVelocity = direction * enemyCtrl.EnemyStatsSO.MoveSpeed;
-        SwapFaceDirection(direction);
+        moveDirection = (chaseTarget.position - transform.position).normalized;
+        rb2d.linearVelocity = moveDirection * enemyCtrl.EnemyStatsSO.MoveSpeed;
+        SwapFaceDirection(moveDirection);
 
     }
+    /*
     public void MovingAroundPlayer(Transform chaseTarget)
     {
         this.chaseTarget = chaseTarget;
@@ -74,10 +76,11 @@ public class EnemyMovement : HaroMonoBehavior
         }
         rb2d.linearVelocity = moveDirection * enemyCtrl.EnemyStatsSO.MoveSpeed;
         SwapFaceDirection(moveDirection);
-    }
+    }*/
 
-    private void SwapFaceDirection(Vector2 moveDirection)
+    public void SwapFaceDirection(Vector2 direction)
     {
+        moveDirection = direction;
         if (!Mathf.Approximately(moveDirection.x, 0f))
         {
             float facingSign = moveDirection.x > 0f ? 1f : -1f;
@@ -85,6 +88,16 @@ public class EnemyMovement : HaroMonoBehavior
             newScale.x = defaultScale.x * facingSign;
             enemyCtrl.transform.localScale = newScale;
         }
+    }
+    public void SwapFaceDirection()
+    {
+        if (enemyCtrl.EnemyDectector.CurrentTarget != null)
+        {
+            //Debug.Log("SwapFaceDirection TO player");
+            moveDirection = (enemyCtrl.EnemyDectector.CurrentTarget.position - transform.position).normalized;
+            SwapFaceDirection(moveDirection);
+        }
+
     }
 
     public void StopChasingPlayer()

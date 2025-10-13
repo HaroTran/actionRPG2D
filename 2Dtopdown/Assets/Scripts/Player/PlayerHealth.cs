@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerHealth : DamageReceiver
@@ -6,9 +7,14 @@ public class PlayerHealth : DamageReceiver
     public PlayerCtrl PlayerCtrl { get { return playerCtrl; } }
     [SerializeField] private int maxHealth;
     [SerializeField] private int currentHealth;
-
     public int CurrentHealth { get { return currentHealth; } }
 
+    public event Action<int, int> OnHealthChanged;
+
+    protected void Start()
+    {
+        NotifyHealthChange();
+    }
     protected override void ResetAllComponents()
     {
         base.ResetAllComponents();
@@ -28,13 +34,18 @@ public class PlayerHealth : DamageReceiver
 
     public void TakeDamage(int damage)
     {
+        playerCtrl.ObjectEffect.PlayEffects(EffectName.SpriteFlash);
         currentHealth -= damage;
+        NotifyHealthChange();
         if (currentHealth <= 0)
         {
             Die();
         }
     }
-
+    private void NotifyHealthChange()
+    {
+        OnHealthChanged?.Invoke(currentHealth, maxHealth);
+    }
     private void Die()
     {
         Debug.Log("Player Died");

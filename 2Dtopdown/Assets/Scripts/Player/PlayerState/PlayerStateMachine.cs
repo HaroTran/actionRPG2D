@@ -19,8 +19,9 @@ public class PlayerStateMachine : ObjectStateMachine
 
     [SerializeField] public PlayerIdleState playerIdleState{get; private set; }
     [SerializeField] public PlayerMoveState playerMoveState{get; private set; }
-    [SerializeField] public PlayerAttackState playerAttackState{get; private set; }
-
+    [SerializeField] public PlayerAttackState playerAttackState { get; private set; }
+    
+    [SerializeField] public PlayerDashState playerDashState { get; private set; }
     protected override void ResetAllComponents()
     {
         base.ResetAllComponents();
@@ -28,6 +29,7 @@ public class PlayerStateMachine : ObjectStateMachine
         playerIdleState = new PlayerIdleState(playerCtrl, this);
         playerMoveState = new PlayerMoveState(playerCtrl, this);
         playerAttackState = new PlayerAttackState(playerCtrl, this);
+        playerDashState = new PlayerDashState(playerCtrl, this);
         ChangeState(playerIdleState);
     }
     protected override void Awake()
