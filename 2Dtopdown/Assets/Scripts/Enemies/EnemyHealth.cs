@@ -1,12 +1,16 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 public class EnemyHealth : DamageReceiver
 {
     [SerializeField] private EnemyCtrl enemyCtrl;
     [SerializeField] private int maxHealth = 100;
+    public int MaxHealth => maxHealth;
     [SerializeField] private int currentHealth;
     public int CurrentHealth => currentHealth;
+
+    public event Action<int, int> OnHealthChanged;
 
     protected override void ResetAllComponents()
     {
@@ -24,6 +28,10 @@ public class EnemyHealth : DamageReceiver
         base.Awake();
         ResetAllComponents();
     }
+    protected void Start()
+    {
+        OnHealthChanged?.Invoke(currentHealth, maxHealth);
+    }
 
     public void TakeDamage(int damage, Transform attacker = null)
     {
@@ -31,6 +39,7 @@ public class EnemyHealth : DamageReceiver
             new List<EffectName>() { EffectName.Knockback,EffectName.SpriteFlash }
             , attacker);
         currentHealth -= damage;
+        OnHealthChanged?.Invoke(currentHealth, maxHealth);
         if (currentHealth <= 0)
         {
             Die();
