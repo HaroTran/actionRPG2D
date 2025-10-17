@@ -21,4 +21,9 @@ public class EnemyStatsSO : ScriptableObject
     [Header("Move Stats")]
     [SerializeField] private float moveSpeed = 2f;
     public float MoveSpeed { get { return moveSpeed; } }
+
+    [Header("Soul Drop Value")]
+    [SerializeField] private int soulDropValue = 10;
+    public int SoulDropValue { get { return soulDropValue; } }
+
 }

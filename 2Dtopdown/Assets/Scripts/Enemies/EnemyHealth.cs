@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System;
+using Unity.VisualScripting;
 
 public class EnemyHealth : DamageReceiver
 {
@@ -49,5 +50,8 @@ public class EnemyHealth : DamageReceiver
     {
         Debug.Log("Enemy Died");
         // Implement enemy death logic here
+        Transform soulvfx = VFX_Spawner.Instance.Spawn(VFX_name.Soul, enemyCtrl.transform.position, Quaternion.identity);
+        soulvfx.GetComponent<SoulVFXCtrl>().SetSoulValue(enemyCtrl.EnemyStatsSO.SoulDropValue);
+        enemyCtrl.gameObject.SetActive(false);
     }
 }

@@ -1,0 +1,1424 @@
+fileFormatVersion: 2
+guid: 5afa9b24a45d4e8439521621c20a7c96
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7673896119025425945
+    second: soul_fire-table-427-240__1_-removebg-preview_0
+  - first:
+      213: -4774303206665844173
+    second: soul_fire-table-427-240__1_-removebg-preview_1
+  - first:
+      213: 6040307088995006046
+    second: soul_fire-table-427-240__1_-removebg-preview_2
+  - first:
+      213: 4484580673422352427
+    second: soul_fire-table-427-240__1_-removebg-preview_3
+  - first:
+      213: 5706492767063525182
+    second: soul_fire-table-427-240__1_-removebg-preview_4
+  - first:
+      213: -7184180081376642601
+    second: soul_fire-table-427-240__1_-removebg-preview_5
+  - first:
+      213: 7655814333085797978
+    second: soul_fire-table-427-240__1_-removebg-preview_6
+  - first:
+      213: -5934185722755086112
+    second: soul_fire-table-427-240__1_-removebg-preview_7
+  - first:
+      213: 7902144405124728138
+    second: soul_fire-table-427-240__1_-removebg-preview_8
+  - first:
+      213: 4914475829870268268
+    second: soul_fire-table-427-240__1_-removebg-preview_9
+  - first:
+      213: 1394796859313903459
+    second: soul_fire-table-427-240__1_-removebg-preview_10
+  - first:
+      213: 2126040649095683670
+    second: soul_fire-table-427-240__1_-removebg-preview_11
+  - first:
+      213: 191825128026481151
+    second: soul_fire-table-427-240__1_-removebg-preview_12
+  - first:
+      213: -4752157714442926515
+    second: soul_fire-table-427-240__1_-removebg-preview_13
+  - first:
+      213: 1601225176537336267
+    second: soul_fire-table-427-240__1_-removebg-preview_14
+  - first:
+      213: 7666082523342580235
+    second: soul_fire-table-427-240__1_-removebg-preview_15
+  - first:
+      213: 8096938235529109180
+    second: soul_fire-table-427-240__1_-removebg-preview_16
+  - first:
+      213: 7141245240705417892
+    second: soul_fire-table-427-240__1_-removebg-preview_17
+  - first:
+      213: -529698125007840567
+    second: soul_fire-table-427-240__1_-removebg-preview_18
+  - first:
+      213: 1993118228392126938
+    second: soul_fire-table-427-240__1_-removebg-preview_19
+  - first:
+      213: -343565675395940978
+    second: soul_fire-table-427-240__1_-removebg-preview_20
+  - first:
+      213: 3403874866866224452
+    second: soul_fire-table-427-240__1_-removebg-preview_21
+  - first:
+      213: -1527307874471314203
+    second: soul_fire-table-427-240__1_-removebg-preview_22
+  - first:
+      213: 2221788653258063157
+    second: soul_fire-table-427-240__1_-removebg-preview_23
+  - first:
+      213: 1553740002663141750
+    second: soul_fire-table-427-240__1_-removebg-preview_24
+  - first:
+      213: -7201262774094788956
+    second: soul_fire-table-427-240__1_-removebg-preview_25
+  - first:
+      213: -6344263369878388073
+    second: soul_fire-table-427-240__1_-removebg-preview_26
+  - first:
+      213: -6166888372349932668
+    second: soul_fire-table-427-240__1_-removebg-preview_27
+  - first:
+      213: 2580259211498760943
+    second: soul_fire-table-427-240__1_-removebg-preview_28
+  - first:
+      213: -4567392256357082830
+    second: soul_fire-table-427-240__1_-removebg-preview_29
+  - first:
+      213: -6438028425426336735
+    second: soul_fire-table-427-240__1_-removebg-preview_30
+  - first:
+      213: 1756979558144561811
+    second: soul_fire-table-427-240__1_-removebg-preview_31
+  - first:
+      213: 4406454682124671439
+    second: soul_fire-table-427-240__1_-removebg-preview_32
+  - first:
+      213: -492987681845563543
+    second: soul_fire-table-427-240__1_-removebg-preview_33
+  - first:
+      213: 6420980263983332947
+    second: soul_fire-table-427-240__1_-removebg-preview_34
+  - first:
+      213: 2124674840098597720
+    second: soul_fire-table-427-240__1_-removebg-preview_35
+  - first:
+      213: -1543994528227372530
+    second: soul_fire-table-427-240__1_-removebg-preview_36
+  - first:
+      213: -5184553904488618175
+    second: soul_fire-table-427-240__1_-removebg-preview_37
+  - first:
+      213: -6763006717414544759
+    second: soul_fire-table-427-240__1_-removebg-preview_38
+  - first:
+      213: -7790232395435948810
+    second: soul_fire-table-427-240__1_-removebg-preview_39
+  - first:
+      213: 8909308949024653984
+    second: soul_fire-table-427-240__1_-removebg-preview_40
+  - first:
+      213: -3477053351313674962
+    second: soul_fire-table-427-240__1_-removebg-preview_41
+  - first:
+      213: -1501436943582591174
+    second: soul_fire-table-427-240__1_-removebg-preview_42
+  - first:
+      213: 8891334998162015373
+    second: soul_fire-table-427-240__1_-removebg-preview_43
+  - first:
+      213: 7397372881678540545
+    second: soul_fire-table-427-240__1_-removebg-preview_44
+  - first:
+      213: -5441385919275639352
+    second: soul_fire-table-427-240__1_-removebg-preview_45
+  - first:
+      213: -5884518230156142475
+    second: soul_fire-table-427-240__1_-removebg-preview_46
+  - first:
+      213: -4974956176789209055
+    second: soul_fire-table-427-240__1_-removebg-preview_47
+  - first:
+      213: 3848544475584856007
+    second: soul_fire-table-427-240__1_-removebg-preview_48
+  - first:
+      213: 3486196573028084807
+    second: soul_fire-table-427-240__1_-removebg-preview_49
+  - first:
+      213: 8007184989293275379
+    second: soul_fire-table-427-240__1_-removebg-preview_50
+  - first:
+      213: -8319750067557940365
+    second: soul_fire-table-427-240__1_-removebg-preview_51
+  - first:
+      213: 3535636234758349243
+    second: soul_fire-table-427-240__1_-removebg-preview_52
+  - first:
+      213: 2314798991248600808
+    second: soul_fire-table-427-240__1_-removebg-preview_53
+  - first:
+      213: 3076466135990974210
+    second: soul_fire-table-427-240__1_-removebg-preview_54
+  - first:
+      213: 1710692205705991003
+    second: soul_fire-table-427-240__1_-removebg-preview_55
+  - first:
+      213: 3803773782333944068
+    second: soul_fire-table-427-240__1_-removebg-preview_56
+  - first:
+      213: -931486480311802697
+    second: soul_fire-table-427-240__1_-removebg-preview_57
+  - first:
+      213: 3387480503064824893
+    second: soul_fire-table-427-240__1_-removebg-preview_58
+  - first:
+      213: 4890020939461337692
+    second: soul_fire-table-427-240__1_-removebg-preview_59
+  - first:
+      213: 1400120227727940697
+    second: soul_fire-table-427-240__1_-removebg-preview_60
+  - first:
+      213: -3215153060580512181
+    second: soul_fire-table-427-240__1_-removebg-preview_61
+  - first:
+      213: 7713046560893722927
+    second: soul_fire-table-427-240__1_-removebg-preview_62
+  - first:
+      213: -530806537937659334
+    second: soul_fire-table-427-240__1_-removebg-preview_63
+  - first:
+      213: -3474404857777614217
+    second: soul_fire-table-427-240__1_-removebg-preview_64
+  - first:
+      213: -7369346888753728213
+    second: soul_fire-table-427-240__1_-removebg-preview_65
+  - first:
+      213: 3230257061690142604
+    second: soul_fire-table-427-240__1_-removebg-preview_66
+  - first:
+      213: -579649681353230136
+    second: soul_fire-table-427-240__1_-removebg-preview_67
+  - first:
+      213: -5449703035773552115
+    second: soul_fire-table-427-240__1_-removebg-preview_68
+  - first:
+      213: 9031506229503297849
+    second: soul_fire-table-427-240__1_-removebg-preview_69
+  - first:
+      213: 8294478516123348526
+    second: soul_fire-table-427-240__1_-removebg-preview_70
+  - first:
+      213: 4356348097875731130
+    second: soul_fire-table-427-240__1_-removebg-preview_71
+  - first:
+      213: -4931148110773999749
+    second: soul_fire-table-427-240__1_-removebg-preview_72
+  - first:
+      213: 776560152951303323
+    second: soul_fire-table-427-240__1_-removebg-preview_73
+  - first:
+      213: -2323573547552918190
+    second: soul_fire-table-427-240__1_-removebg-preview_74
+  - first:
+      213: 1264609046757221762
+    second: soul_fire-table-427-240__1_-removebg-preview_75
+  - first:
+      213: -2464943781236756222
+    second: soul_fire-table-427-240__1_-removebg-preview_76
+  - first:
+      213: 4058630900651071882
+    second: soul_fire-table-427-240__1_-removebg-preview_77
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 321
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e1ad364328d08590800000000000000
+      internalID: -7673896119025425945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 321
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33a8ca467844ebdb0800000000000000
+      internalID: -4774303206665844173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 321
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5632d56b4b73d350800000000000000
+      internalID: 6040307088995006046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 321
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b20ebe5bc5e6c3e30800000000000000
+      internalID: 4484580673422352427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 321
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e374826ffe8813f40800000000000000
+      internalID: 5706492767063525182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 321
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d9bb17874aac4c90800000000000000
+      internalID: -7184180081376642601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 321
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e4cedd29aee3a60800000000000000
+      internalID: 7655814333085797978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 268
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e80dfb968985ada0800000000000000
+      internalID: -5934185722755086112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 268
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a45cc47187e0aad60800000000000000
+      internalID: 7902144405124728138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 268
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6f09a0bab9b33440800000000000000
+      internalID: 4914475829870268268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 268
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3675c358a505b5310800000000000000
+      internalID: 1394796859313903459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 268
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e9363c4b6318d10800000000000000
+      internalID: 2126040649095683670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 268
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff1230700ff79a200800000000000000
+      internalID: 191825128026481151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 268
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d464ff99cb1fc0eb0800000000000000
+      internalID: -4752157714442926515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 215
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc98bec70d1b83610800000000000000
+      internalID: 1601225176537336267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 215
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a2aa63075636a60800000000000000
+      internalID: 7666082523342580235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 215
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbe9df00d6a1e5070800000000000000
+      internalID: 8096938235529109180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 215
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a20232e5bcca1360800000000000000
+      internalID: 7141245240705417892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 215
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ca97bc9c5226a8f0800000000000000
+      internalID: -529698125007840567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 215
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad92baef77af8ab10800000000000000
+      internalID: 1993118228392126938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 215
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8df109a6d86b3bf0800000000000000
+      internalID: -343565675395940978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 162
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44df07b282efc3f20800000000000000
+      internalID: 3403874866866224452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 162
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ecfa778499edcae0800000000000000
+      internalID: -1527307874471314203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 162
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53db073320165de10800000000000000
+      internalID: 2221788653258063157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 162
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6711d04ec4eff8510800000000000000
+      internalID: 1553740002663141750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 162
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a606df29a9ff0c90800000000000000
+      internalID: -7201262774094788956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 162
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79240e41416a4f7a0800000000000000
+      internalID: -6344263369878388073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 162
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b689ce2bfca6aa0800000000000000
+      internalID: -6166888372349932668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 109
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fea20d1051ceec320800000000000000
+      internalID: 2580259211498760943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 109
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23957f121fc5d90c0800000000000000
+      internalID: -4567392256357082830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 109
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1248898d14787a6a0800000000000000
+      internalID: -6438028425426336735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 109
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39254d8699b026810800000000000000
+      internalID: 1756979558144561811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 109
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc9d5eedf2fd62d30800000000000000
+      internalID: 4406454682124671439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_33
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 109
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96fa3f8b05e8829f0800000000000000
+      internalID: -492987681845563543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_34
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 109
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e3580c787eb1950800000000000000
+      internalID: 6420980263983332947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 56
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85b6943928c5c7d10800000000000000
+      internalID: 2124674840098597720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_36
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 56
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e025cd13821a29ae0800000000000000
+      internalID: -1543994528227372530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_37
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 56
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 147671c51b3cc08b0800000000000000
+      internalID: -5184553904488618175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_38
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 56
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98aece2f839f422a0800000000000000
+      internalID: -6763006717414544759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_39
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 56
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f4cc4829e883e390800000000000000
+      internalID: -7790232395435948810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_40
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 56
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a2c2dc194934ab70800000000000000
+      internalID: 8909308949024653984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_41
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 56
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2dedd136660fbfc0800000000000000
+      internalID: -3477053351313674962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a378c150e03d92be0800000000000000
+      internalID: -1501436943582591174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_43
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 3
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d840270921e546b70800000000000000
+      internalID: 8891334998162015373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_44
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 3
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10f9e83617fb8a660800000000000000
+      internalID: 7397372881678540545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soul_fire-table-427-240__1_-removebg-preview_45
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 3
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cd53cb06505c74b0800000000000000
+      internalID: -5441385919275639352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fd7bf9251e49d724baa432efb86d760e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":7.0},"gridSpriteSize":{"x":95.0,"y":53.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      soul_fire-table-427-240__1_-removebg-preview_0: -7673896119025425945
+      soul_fire-table-427-240__1_-removebg-preview_1: -4774303206665844173
+      soul_fire-table-427-240__1_-removebg-preview_10: 1394796859313903459
+      soul_fire-table-427-240__1_-removebg-preview_11: 2126040649095683670
+      soul_fire-table-427-240__1_-removebg-preview_12: 191825128026481151
+      soul_fire-table-427-240__1_-removebg-preview_13: -4752157714442926515
+      soul_fire-table-427-240__1_-removebg-preview_14: 1601225176537336267
+      soul_fire-table-427-240__1_-removebg-preview_15: 7666082523342580235
+      soul_fire-table-427-240__1_-removebg-preview_16: 8096938235529109180
+      soul_fire-table-427-240__1_-removebg-preview_17: 7141245240705417892
+      soul_fire-table-427-240__1_-removebg-preview_18: -529698125007840567
+      soul_fire-table-427-240__1_-removebg-preview_19: 1993118228392126938
+      soul_fire-table-427-240__1_-removebg-preview_2: 6040307088995006046
+      soul_fire-table-427-240__1_-removebg-preview_20: -343565675395940978
+      soul_fire-table-427-240__1_-removebg-preview_21: 3403874866866224452
+      soul_fire-table-427-240__1_-removebg-preview_22: -1527307874471314203
+      soul_fire-table-427-240__1_-removebg-preview_23: 2221788653258063157
+      soul_fire-table-427-240__1_-removebg-preview_24: 1553740002663141750
+      soul_fire-table-427-240__1_-removebg-preview_25: -7201262774094788956
+      soul_fire-table-427-240__1_-removebg-preview_26: -6344263369878388073
+      soul_fire-table-427-240__1_-removebg-preview_27: -6166888372349932668
+      soul_fire-table-427-240__1_-removebg-preview_28: 2580259211498760943
+      soul_fire-table-427-240__1_-removebg-preview_29: -4567392256357082830
+      soul_fire-table-427-240__1_-removebg-preview_3: 4484580673422352427
+      soul_fire-table-427-240__1_-removebg-preview_30: -6438028425426336735
+      soul_fire-table-427-240__1_-removebg-preview_31: 1756979558144561811
+      soul_fire-table-427-240__1_-removebg-preview_32: 4406454682124671439
+      soul_fire-table-427-240__1_-removebg-preview_33: -492987681845563543
+      soul_fire-table-427-240__1_-removebg-preview_34: 6420980263983332947
+      soul_fire-table-427-240__1_-removebg-preview_35: 2124674840098597720
+      soul_fire-table-427-240__1_-removebg-preview_36: -1543994528227372530
+      soul_fire-table-427-240__1_-removebg-preview_37: -5184553904488618175
+      soul_fire-table-427-240__1_-removebg-preview_38: -6763006717414544759
+      soul_fire-table-427-240__1_-removebg-preview_39: -7790232395435948810
+      soul_fire-table-427-240__1_-removebg-preview_4: 5706492767063525182
+      soul_fire-table-427-240__1_-removebg-preview_40: 8909308949024653984
+      soul_fire-table-427-240__1_-removebg-preview_41: -3477053351313674962
+      soul_fire-table-427-240__1_-removebg-preview_42: -1501436943582591174
+      soul_fire-table-427-240__1_-removebg-preview_43: 8891334998162015373
+      soul_fire-table-427-240__1_-removebg-preview_44: 7397372881678540545
+      soul_fire-table-427-240__1_-removebg-preview_45: -5441385919275639352
+      soul_fire-table-427-240__1_-removebg-preview_5: -7184180081376642601
+      soul_fire-table-427-240__1_-removebg-preview_6: 7655814333085797978
+      soul_fire-table-427-240__1_-removebg-preview_7: -5934185722755086112
+      soul_fire-table-427-240__1_-removebg-preview_8: 7902144405124728138
+      soul_fire-table-427-240__1_-removebg-preview_9: 4914475829870268268
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
